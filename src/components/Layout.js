@@ -1,10 +1,21 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
+import { ThemeProvider } from "emotion-theming";
+
+const theme = {
+  colors: {
+    primary: "#fff",
+    secondary: "#00EBC7",
+    darkGray: "#3B3B45",
+    lightGray: "#898898",
+    background: "060515",
+  },
+};
 
 const Layout = ({ children }) => (
-  <>
+  <ThemeProvider theme={theme}>
     <Global
-      css={css`
+      styles={css`
         * {
           box-sizing: border-box;
           margin: 0;
@@ -16,18 +27,41 @@ const Layout = ({ children }) => (
         html,
         body {
           margin: 0;
-          font-family: Roboto, Helvetica, Arial, sans-serif;
-          font-size: 18px;
+          font-family: "Open Sans", sans-serif;
           line-height: 1.4;
+          background: #060515;
+          color: #fff;
         }
 
         > div {
           margin-top: 0;
         }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          line-height: 1.1;
+        }
       `}
     />
-    <main>{children}</main>
-  </>
+    <main
+      css={css`
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        color: ${({ theme }) => theme.primary};
+      `}
+    >
+      {children}
+    </main>
+  </ThemeProvider>
 );
 
 export default Layout;
