@@ -1,15 +1,14 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
 import { ThemeProvider } from "emotion-theming";
+import Nav from "./Nav";
 
 const theme = {
-  colors: {
-    primary: "#fff",
-    secondary: "#00EBC7",
-    darkGray: "#3B3B45",
-    lightGray: "#898898",
-    background: "060515",
-  },
+  primary: "#fff",
+  secondary: "#00EBC7",
+  darkGray: "#3B3B45",
+  lightGray: "#898898",
+  background: "060515",
 };
 
 const Layout = ({ children }) => (
@@ -45,18 +44,29 @@ const Layout = ({ children }) => (
         h6 {
           line-height: 1.1;
         }
+        a {
+          text-decoration: none;
+          color: #00ebc7;
+        }
       `}
     />
+    <div
+      css={css`
+        display: flex;
+      `}
+    ></div>
+    <Nav />
     <main
       css={css`
+        flex: 0 0 80;
         height: 100vh;
         display: flex;
+        margin: 0;
         flex-flow: column;
         justify-content: center;
         justify-items: center;
         align-content: center;
         align-items: center;
-        color: ${({ theme }) => theme.primary};
       `}
     >
       {children}
