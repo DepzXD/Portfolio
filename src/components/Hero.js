@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 
 const HeroStyles = styled.div`
+  padding: 15rem;
   h3 {
     font-size: 45.23px;
     font-weight: 300;
