@@ -9,7 +9,6 @@ const AboutMe = () => (
       display: flex;
       flex-flow: column wrap;
       align-content: center;
-
       h1 {
         font-size: 3.5rem;
         margin-left: 4.3rem;
