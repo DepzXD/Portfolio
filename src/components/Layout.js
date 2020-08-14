@@ -1,6 +1,7 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
 import { ThemeProvider } from "emotion-theming";
+import Helmet from "react-helmet";
 import Nav from "./Nav";
 
 const theme = {
@@ -54,6 +55,11 @@ const Layout = ({ children }) => (
         }
       `}
     />
+    <Helmet>
+      <html lang="en" />
+      <title>Depz</title>
+      <meta name="description" content="Portfolio" />
+    </Helmet>
     <div
       css={css`
         display: flex;
