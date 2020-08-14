@@ -4,15 +4,16 @@ import { css } from "@emotion/core";
 const AboutMe = () => (
   <section
     css={css`
-      margin-left: 8%;
+      margin-left: 10%;
       display: flex;
       flex-flow: column wrap;
-      height: 100vh;
+      align-content: center;
+
       h2 {
-        margin-left: 8.8rem;
+        margin-left: 4.3rem;
       }
       .content {
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
         display: flex;
         div {
@@ -57,5 +58,4 @@ const AboutMe = () => (
     </div>
   </section>
 );
-// wallhaks;
 export default AboutMe;

@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 
-const HeroStyles = styled.div`
-  padding: 15rem;
+const HeroStyles = styled.section`
   h3 {
     font-size: 45.23px;
     font-weight: 300;
@@ -16,6 +15,7 @@ const HeroStyles = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-content: center;
 `;
 
 const BtnStyle = styled.button`
@@ -27,7 +27,6 @@ const BtnStyle = styled.button`
   padding: 0.8rem;
   font-weight: 600;
   max-width: 10rem;
-  /* align-self: center; */
   margin-left: 9rem;
   margin-top: 3rem;
 `;

@@ -48,6 +48,10 @@ const Layout = ({ children }) => (
           text-decoration: none;
           color: #00ebc7;
         }
+        section {
+          height: 100vh;
+          display: block;
+        }
       `}
     />
     <div
@@ -59,7 +63,6 @@ const Layout = ({ children }) => (
     <main
       css={css`
         flex: 0 0 80;
-        height: 100vh;
         display: flex;
         margin: 0;
         flex-flow: column;
