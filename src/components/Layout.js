@@ -9,7 +9,9 @@ const theme = {
   secondary: "#00EBC7",
   darkGray: "#3B3B45",
   lightGray: "#898898",
-  background: "060515",
+  background: "#060515",
+  cardPri: "#131222",
+  cardSec: "#131132",
 };
 
 const Layout = ({ children }) => (
