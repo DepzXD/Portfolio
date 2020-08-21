@@ -10,7 +10,6 @@ const Line = styled.div`
   border: 1.2px solid ${({ theme }) => theme.lightGray};
   &.top {
     height: 50rem;
-    /* margin-top: 5rem; */
   }
 `;
 
@@ -50,9 +49,15 @@ const Nav = () => (
         flex: 0 0 40;
       `}
     >
-      <h4>Contact</h4>
-      <h4>About</h4>
-      <h4>Works</h4>
+      <h4>
+        <a href="#Contact">Contact</a>
+      </h4>
+      <h4>
+        <a href="#Projects">Works</a>
+      </h4>
+      <h4>
+        <a href="#About-Me">About</a>
+      </h4>
     </div>
     <Line />
   </div>

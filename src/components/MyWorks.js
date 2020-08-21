@@ -82,6 +82,7 @@ const CardStyle = styled.div`
 const MyWorks = () => {
   return (
     <section
+      id="Projects"
       css={css`
         margin-left: 10%;
         display: flex;

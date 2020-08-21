@@ -20,7 +20,6 @@ const HeroStyles = styled.section`
 
 const BtnStyle = styled.button`
   background: none;
-  color: ${({ theme }) => theme.secondary};
   border: 3px solid ${({ theme }) => theme.secondary};
   border-radius: 5px;
   font-size: 1.2rem;
@@ -29,6 +28,9 @@ const BtnStyle = styled.button`
   max-width: 10rem;
   margin-left: 9rem;
   margin-top: 3rem;
+  a {
+    color: ${({ theme }) => theme.secondary};
+  }
 `;
 
 const Hero = () => (

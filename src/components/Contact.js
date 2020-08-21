@@ -15,8 +15,8 @@ const BtnStyle = styled.button`
 
 const Contact = () => (
   <section
+    id="Contact"
     css={css`
-      /* margin-left: 10%; */
       display: flex;
       flex-flow: column wrap;
       align-content: center;

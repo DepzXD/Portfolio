@@ -3,6 +3,7 @@ import { css } from "@emotion/core";
 
 const AboutMe = () => (
   <section
+    id="About-Me"
     css={css`
       padding-top: 4rem;
       margin-left: 10%;

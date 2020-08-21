@@ -45,7 +45,7 @@ const Layout = ({ children }) => (
         }
         a {
           text-decoration: none;
-          color: #00ebc7;
+          color: #fff;
         }
         section {
           height: 100vh;
