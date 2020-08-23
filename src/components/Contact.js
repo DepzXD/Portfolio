@@ -11,6 +11,9 @@ const BtnStyle = styled.button`
   padding: 0.8rem;
   font-weight: 600;
   max-width: 10rem;
+  a {
+    color: ${({ theme }) => theme.secondary};
+  }
 `;
 
 const Contact = () => (
@@ -34,13 +37,14 @@ const Contact = () => (
       }
     `}
   >
-    <h1>Get into Touch</h1>
+    <h1>Let's Connect</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur
-      cumque sequi ipsum ipsa iste necessitatibus enim veritatis, reprehenderit
-      eius dolor ut facilis
+      have a project you'd like to discuss or just want to say hi ? <br />
+      feel free to send a message!
     </p>
-    <BtnStyle>Say Hi!</BtnStyle>
+    <BtnStyle>
+      <a href="mailto:dk721572@gmail.com">Get In Touch</a>
+    </BtnStyle>
   </section>
 );
 
