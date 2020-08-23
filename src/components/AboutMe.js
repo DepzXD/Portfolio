@@ -5,33 +5,31 @@ const AboutMe = () => (
   <section
     id="About-Me"
     css={css`
-      padding-top: 4rem;
-      margin-left: 10%;
       display: flex;
       flex-flow: column wrap;
-      align-content: center;
+      justify-content: center;
+      /* margin-top: 20%; */
+      margin-left: 10%;
+      width: 80%;
       h1 {
         font-size: 3.5rem;
-        margin-left: 4.3rem;
         margin-bottom: 3rem;
       }
       .content {
-        justify-content: space-around;
-        align-content: center;
         display: flex;
-
+        justify-content: space-between;
         .left {
           flex: 0 0 50%;
         }
         .right {
-          flex: 0 0 30%;
+          flex: 0 0 40%;
           margin: 0;
           height: inherit;
         }
         .avatar {
-          margin: 0 auto;
+          margin: 0;
           background: #131222;
-          width: 80%;
+          width: 70%;
           height: 100%;
           border-radius: 20px;
           padding: 1rem;
@@ -39,6 +37,7 @@ const AboutMe = () => (
         }
       }
       p {
+        text-align: left;
         line-height: 1.7;
       }
     `}

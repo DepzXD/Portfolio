@@ -84,11 +84,11 @@ const MyWorks = () => {
     <section
       id="Projects"
       css={css`
-        margin-left: 10%;
         display: flex;
         flex-flow: column wrap;
+        margin-left: 10%;
         width: 80%;
-
+        justify-content: center;
         h1 {
           font-size: 3.5rem;
         }

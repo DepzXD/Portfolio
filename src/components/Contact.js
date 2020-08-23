@@ -19,9 +19,9 @@ const Contact = () => (
     css={css`
       display: flex;
       flex-flow: column wrap;
-      align-content: center;
-      width: 80%;
+      justify-content: center;
       align-items: center;
+      width: 80%;
 
       h1 {
         font-size: 3.5rem;
@@ -30,6 +30,7 @@ const Contact = () => (
       p {
         margin: 2rem 0;
         width: 45%;
+        text-align: center;
       }
     `}
   >
