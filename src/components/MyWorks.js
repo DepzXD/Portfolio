@@ -9,11 +9,11 @@ const CardStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
-  .ctn {
+  .content {
     display: flex;
     flex-flow: column;
     border-radius: 0.5em;
-    height: 350px;
+    /* height: 350px; */
     grid-column: 1 / 6;
     grid-row: 1 / 1;
     background: ${({ theme }) => theme.cardPri};
@@ -76,6 +76,42 @@ const CardStyle = styled.div`
     width: 1.2rem;
     margin-left: 0.5rem;
   }
+
+  @media all and (max-width: 414px) {
+    margin-top: 2rem;
+
+    .content {
+      grid-column: 1 / 9;
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+        margin-top: 1.25rem;
+        width: 100%;
+      }
+      .icons {
+        display: none;
+      }
+      .icon {
+        width: 1rem;
+      }
+      .links {
+        margin-top: 1.5rem;
+        text-align: center;
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .preview {
+      display: none;
+    }
+  }
 `;
 
 const MyWorks = () => {
@@ -83,7 +119,7 @@ const MyWorks = () => {
     <ContainerStyle id="Projects">
       <h1>My Works</h1>
       <CardStyle>
-        <div className="ctn">
+        <div className="content">
           <h2>Dududu do</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam

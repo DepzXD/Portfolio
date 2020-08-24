@@ -14,6 +14,14 @@ const Contact = () => (
         width: 45%;
         text-align: center;
       }
+
+      @media all and (max-width: 414px) {
+        p {
+          margin: 1.5rem 0;
+          font-size: 1rem;
+          width: 80%;
+        }
+      }
     `}
   >
     <h1>Let's Connect</h1>

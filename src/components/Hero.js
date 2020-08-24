@@ -15,6 +15,10 @@ const Hero = () => (
         margin-right: 9rem;
         margin-top: 3rem;
         align-self: center;
+
+        @media all and (max-width: 414px) {
+          margin-right: 2.25rem;
+        }
       `}
     >
       Get In Touch

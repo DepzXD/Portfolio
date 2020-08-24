@@ -9,6 +9,10 @@ const ButtonStyle = styled.a`
   padding: 0.8rem;
   font-weight: 600;
   max-width: 10rem;
+
+  @media all and (max-width: 414px) {
+    font-size: 1rem;
+  }
 `;
 
 export default ButtonStyle;

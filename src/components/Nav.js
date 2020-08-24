@@ -36,6 +36,10 @@ const Nav = () => (
       div {
         margin: 0;
       }
+
+      @media all and (max-width: 414px) {
+        display: none;
+      }
     `}
   >
     <Line className="top" />

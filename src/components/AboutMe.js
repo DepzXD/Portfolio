@@ -32,6 +32,21 @@ const AboutMe = () => (
         text-align: left;
         line-height: 1.7;
       }
+      @media all and (max-width: 414px) {
+        p {
+          font-size: 0.85rem;
+          line-height: 1.95;
+        }
+        .content {
+          margin-top: 2rem;
+          .left {
+            flex: 0 0 100%;
+          }
+          .right {
+            display: none;
+          }
+        }
+      }
     `}
   >
     <h1>About Me</h1>
