@@ -25,11 +25,13 @@ const Nav = () => (
       align-items: center;
       align-content: center;
       margin-left: 1rem;
-      h1 {
-        margin-top: 0;
-      }
       position: fixed;
       h4 {
+        &:hover {
+          a {
+            color: #00ebc7;
+          }
+        }
         transform: rotate(-90deg);
         font-weight: 400;
       }

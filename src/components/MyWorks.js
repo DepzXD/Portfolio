@@ -13,7 +13,7 @@ const CardStyle = styled.div`
     display: flex;
     flex-flow: column;
     border-radius: 0.5em;
-    /* height: 350px; */
+    max-height: 350px;
     grid-column: 1 / 6;
     grid-row: 1 / 1;
     background: ${({ theme }) => theme.cardPri};
@@ -38,6 +38,12 @@ const CardStyle = styled.div`
       text-align: center;
       a {
         font-size: 1.2rem;
+        &:hover {
+          color: #00ebc7;
+          path {
+            fill: #00ebc7;
+          }
+        }
       }
     }
     .icons {

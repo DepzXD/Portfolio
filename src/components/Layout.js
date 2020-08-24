@@ -51,6 +51,12 @@ const Layout = ({ children }) => (
           height: 100vh;
           display: block;
         }
+
+        @media all and (max-width: 414px) {
+          section {
+            height: 70vh;
+          }
+        }
       `}
     />
     <Helmet>

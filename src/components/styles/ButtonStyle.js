@@ -10,6 +10,10 @@ const ButtonStyle = styled.a`
   font-weight: 600;
   max-width: 10rem;
 
+  &:hover {
+    background: rgba(0, 235, 199, 0.1);
+  }
+
   @media all and (max-width: 414px) {
     font-size: 1rem;
   }
