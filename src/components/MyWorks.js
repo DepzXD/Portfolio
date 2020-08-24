@@ -2,8 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import sampleImg from "../../static/images/sample.jpg";
-
-// Todo: About me h1 margin & skills margin
+import ContainerStyle from "./styles/ContainerStyle";
 
 const CardStyle = styled.div`
   margin-top: 4rem;
@@ -21,25 +20,25 @@ const CardStyle = styled.div`
     padding: 2em;
 
     h2 {
-      margin-top: 2rem;
-      font-size: 1.8rem;
+      margin-top: 1rem;
+      font-size: 2.25rem;
     }
     p {
-      margin-top: 2rem;
+      margin-top: 2.25rem;
       width: 60%;
-    }
-
-    .links {
-      display: flex;
-      margin-top: 1.8rem;
-      text-align: center;
-      a {
-        font-size: 1.2rem;
-      }
     }
     a {
       align-self: center;
       color: #fff;
+    }
+
+    .links {
+      display: flex;
+      margin-top: 2.25rem;
+      text-align: center;
+      a {
+        font-size: 1.2rem;
+      }
     }
     .icons {
       display: flex;
@@ -81,19 +80,7 @@ const CardStyle = styled.div`
 
 const MyWorks = () => {
   return (
-    <section
-      id="Projects"
-      css={css`
-        display: flex;
-        flex-flow: column wrap;
-        margin-left: 10%;
-        width: 80%;
-        justify-content: center;
-        h1 {
-          font-size: 3.5rem;
-        }
-      `}
-    >
+    <ContainerStyle id="Projects">
       <h1>My Works</h1>
       <CardStyle>
         <div className="ctn">
@@ -202,7 +189,7 @@ const MyWorks = () => {
           <div className="overlay" />
         </div>
       </CardStyle>
-    </section>
+    </ContainerStyle>
   );
 };
 

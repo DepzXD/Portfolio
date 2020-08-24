@@ -1,23 +1,15 @@
 import React from "react";
 import { css } from "@emotion/core";
+import ContainerStyle from "./styles/ContainerStyle";
 
 const AboutMe = () => (
-  <section
+  <ContainerStyle
     id="About-Me"
     css={css`
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      /* margin-top: 20%; */
-      margin-left: 10%;
-      width: 80%;
-      h1 {
-        font-size: 3.5rem;
-        margin-bottom: 3rem;
-      }
       .content {
         display: flex;
         justify-content: space-between;
+        margin-top: 3rem;
         .left {
           flex: 0 0 50%;
         }
@@ -60,6 +52,6 @@ const AboutMe = () => (
         <div className="avatar">Javascript</div>
       </div>
     </div>
-  </section>
+  </ContainerStyle>
 );
 export default AboutMe;

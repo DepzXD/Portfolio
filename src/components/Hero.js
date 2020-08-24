@@ -1,48 +1,35 @@
-import styled from "@emotion/styled";
 import React from "react";
-
-const HeroStyles = styled.section`
-  h3 {
-    font-size: 45.23px;
-    font-weight: 300;
-    color: ${({ theme }) => theme.lightGray};
-  }
-
-  h1 {
-    font-size: 90.44px;
-    margin-top: 0.3rem;
-  }
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-`;
-
-const BtnStyle = styled.button`
-  background: none;
-  border: 3px solid ${({ theme }) => theme.secondary};
-  border-radius: 5px;
-  font-size: 1.2rem;
-  padding: 0.8rem;
-  font-weight: 600;
-  max-width: 10rem;
-  margin-left: 9rem;
-  margin-top: 3rem;
-  a {
-    color: ${({ theme }) => theme.secondary};
-  }
-`;
+import { css } from "@emotion/core";
+import ContainerStyle from "./styles/ContainerStyle";
+import ButtonStyle from "./styles/ButtonStyle";
 
 const Hero = () => (
-  <HeroStyles>
+  <ContainerStyle id="Hero" hero>
     <h3>Deepak Kumar</h3>
     <h1>
       Designer <br /> & Developer
     </h1>
-    <BtnStyle>
-      <a href="mailto:dk721572@gmail.com">Get In Touch</a>
-    </BtnStyle>
-  </HeroStyles>
+    <ButtonStyle
+      href="mailto:dk721572@gmail.com"
+      css={css`
+        margin-right: 9rem;
+        margin-top: 3rem;
+        align-self: center;
+      `}
+    >
+      Get In Touch
+    </ButtonStyle>
+  </ContainerStyle>
 );
 
 export default Hero;
+
+// 7.594em (121.50px)
+// 5.063em (81.00px)
+// 3.375em (54.00px)
+// 2.25em (36.00px)
+// 1.5em (24.00px)
+// 1em (16.00px)
+// 0.667em (10.67px)
+// 0.444em (7.11px)
+// 0.296em (4.74px)
