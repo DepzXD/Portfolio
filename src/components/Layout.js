@@ -54,7 +54,7 @@ const Layout = ({ children }) => (
 
         @media all and (max-width: 414px) {
           section {
-            height: 70vh;
+            height: 90vh;
           }
         }
       `}

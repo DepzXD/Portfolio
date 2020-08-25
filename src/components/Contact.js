@@ -18,7 +18,7 @@ const Contact = () => (
       @media all and (max-width: 414px) {
         p {
           margin: 1.5rem 0;
-          font-size: 1rem;
+          font-size: 0.85rem;
           width: 80%;
         }
       }

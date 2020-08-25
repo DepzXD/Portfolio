@@ -40,7 +40,7 @@ const ContainerStyle = styled.section`
           font-size: 1.5rem;
         }
         h1 {
-          font-size: 3.375rem;
+          font-size: 3rem;
         }
       }
     `}
