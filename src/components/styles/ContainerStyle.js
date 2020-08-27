@@ -3,12 +3,17 @@ import { css } from "@emotion/core";
 
 const ContainerStyle = styled.section`
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   margin-left: 10%;
   width: 80%;
   h1 {
     font-size: 3.375rem;
+  }
+
+  &.auto {
+    padding-top: 5rem;
+    height: 100%;
   }
 
   @media all and (max-width: 414px) {
@@ -22,6 +27,7 @@ const ContainerStyle = styled.section`
   ${(props) =>
     props.hero &&
     css`
+      flex-flow: column wrap;
       margin-left: 5%;
       align-content: center;
       h1 {
