@@ -1,9 +1,4 @@
 import styled from "@emotion/styled";
-import portfolioImg from "../../../static/images/portfolio.png";
-import werecatImg from "../../../static/images/werecat.png";
-import rudeWalletImg from "../../../static/images/rude-wallet.png";
-import ticTacToeImg from "../../../static/images/tic-tac-toe.png";
-import botImg from "../../../static/images/bot.jpg";
 
 const CardStyle = styled.div`
   margin-top: 4rem;
@@ -81,23 +76,23 @@ const CardStyle = styled.div`
   }
 
   .portfolio {
-    background: url(${portfolioImg}) no-repeat center center/cover;
+    background: url("/images/portfolio.png") no-repeat center center/cover;
   }
 
   .bot {
-    background: url(${botImg}) no-repeat center center/cover;
+    background: url("/images/bot.jpg") no-repeat center center/cover;
   }
 
   .rude-wallet {
-    background: url(${rudeWalletImg}) no-repeat center center/cover;
+    background: url("/images/rude-wallet.png") no-repeat center center/cover;
   }
 
   .werecat {
-    background: url(${werecatImg}) no-repeat center center/cover;
+    background: url("/images/werecat.png") no-repeat center center/cover;
   }
 
   .tic-tac-toe {
-    background: url(${ticTacToeImg}) no-repeat center center/cover;
+    background: url("/images/tic-tac-toe.png") no-repeat center center/cover;
   }
 
   .icon {
