@@ -8,8 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const TicTacToe = () => {
   const cardRef = useRef(null);
   useEffect(() => {
-    console.log(cardRef);
-
     gsap.fromTo(
       cardRef.current,
       { autoAlpha: 0, y: 30 },

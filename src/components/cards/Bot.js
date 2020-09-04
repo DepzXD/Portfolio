@@ -9,8 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Bot = () => {
   const cardRef = useRef(null);
   useEffect(() => {
-    console.log(cardRef);
-
     gsap.fromTo(
       cardRef.current,
       { autoAlpha: 0, y: 30 },
