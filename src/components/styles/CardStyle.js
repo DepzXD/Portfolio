@@ -20,7 +20,7 @@ const CardStyle = styled.div`
       font-size: 2.25rem;
     }
     p {
-      margin-top: 2.25rem;
+      margin-top: 2rem;
       width: 60%;
     }
     a {
@@ -40,6 +40,12 @@ const CardStyle = styled.div`
           color: #00ebc7;
           path {
             fill: #00ebc7;
+          }
+        }
+        &.not-live {
+          color: ${({ theme }) => theme.lightGray};
+          path {
+            fill: ${({ theme }) => theme.lightGray};
           }
         }
       }

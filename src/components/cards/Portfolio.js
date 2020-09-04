@@ -28,10 +28,10 @@ const Portfolio = () => {
       <div className="content">
         <h2>Portfolio</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam
-          <br />
-          dolore nemo ullam fugit architecto recusandae <br /> inventore odio
-          officiis consectetur, nihil
+          Personal Website build with Gatsby, Js, Gsap and Emotion (Css in Js)
+          for Styling.
+          <br />I used Gatsby to developed my site because its Comes with all
+          the nessary tools (bundler, router, etc, ssr) and its seo friendly.
         </p>
         <div className="links">
           <a

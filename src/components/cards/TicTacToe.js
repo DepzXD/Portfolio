@@ -27,10 +27,9 @@ const TicTacToe = () => {
       <div className="content">
         <h2>Tic Tac Toe</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam
-          <br />
-          dolore nemo ullam fugit architecto recusandae <br /> inventore odio
-          officiis consectetur, nihil
+          Simple Two player Game build with React and TypeScript.
+          <br />I Build this game when i was learning TypeScript and in future i
+          will integrate it with Single player Game.
         </p>
         <div className="links">
           <a
