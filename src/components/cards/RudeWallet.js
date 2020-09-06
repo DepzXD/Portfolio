@@ -28,8 +28,8 @@ const RudeWallet = () => {
         <p>
           Rude Wallet is a Funny budget managing tool that watch your monthly
           budget.
-          <br />A Hackthon project, if user spent over its budget then its gonna
-          insult user for over budgeting.
+          <br />
+          Simple budget managing app that insult you for over budgeting.
         </p>
         <div className="links">
           <a

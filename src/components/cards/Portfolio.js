@@ -28,8 +28,9 @@ const Portfolio = () => {
         <p>
           Personal Website build with Gatsby, Js, Gsap and Emotion (Css in Js)
           for Styling.
-          <br />I used Gatsby to developed my site because its Comes with all
-          the nessary tools (bundler, router, etc, ssr) and its seo friendly.
+          <br />
+          <br />
+          <br />
         </p>
         <div className="links">
           <a
