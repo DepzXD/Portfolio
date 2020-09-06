@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/core";
+import BongoCat from "./BongoCat";
 import ContainerStyle from "./styles/ContainerStyle";
 
 const AboutMe = () => (
@@ -17,15 +18,6 @@ const AboutMe = () => (
           flex: 0 0 40%;
           margin: 0;
           height: inherit;
-        }
-        .avatar {
-          margin: 0;
-          background: #131222;
-          width: 70%;
-          height: 100%;
-          border-radius: 20px;
-          padding: 1rem;
-          text-align: center;
         }
       }
       p {
@@ -70,7 +62,7 @@ const AboutMe = () => (
         </p>
       </div>
       <div className="right">
-        <div className="avatar">Javascript</div>
+        <BongoCat />
       </div>
     </div>
   </ContainerStyle>
