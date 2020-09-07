@@ -47,18 +47,17 @@ const AboutMe = () => (
       <div className="left">
         <p>
           Hi, I'm Deepak Kumar, a passionate self-taught Full stack developer
-          from India also know as Depz on web.
+          from India also known as Depz on the web.
         </p>
         <p>
           I'm currently a third year student at DAV College pursuing my degree
-          in bachelor in computer application. I have experience in designing
+          in Bachelor of Computer Application. I have experience in designing
           and developing software for the web, from simple websites to full
           stack Applications.
         </p>
         <p>
-          I always try to learn new and better way to create applications with
-          scalable code. I'm also like attending hackathons and tech
-          conferences.
+          I always try to learn new and better ways to create applications with
+          scalable code. I also like attending Hackathons and Conferences.
         </p>
       </div>
       <div className="right">

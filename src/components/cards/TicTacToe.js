@@ -26,8 +26,8 @@ const TicTacToe = () => {
         <h2>Tic Tac Toe</h2>
         <p>
           Simple Two player Game build with React and TypeScript.
-          <br />I Build this game when i was learning TypeScript and in future i
-          will integrate it with Single player Game.
+          <br />I built this game when I was learning TypeScript and in the
+          future I will integrate it with Single player Game.
         </p>
         <div className="links">
           <a

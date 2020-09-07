@@ -26,7 +26,7 @@ const Portfolio = () => {
       <div className="content">
         <h2>Portfolio</h2>
         <p>
-          Personal Website build with Gatsby, Js, Gsap and Emotion (Css in Js)
+          Personal Website built with Gatsby, Js, Gsap and Emotion (Css in Js)
           for Styling.
           <br />
           <br />

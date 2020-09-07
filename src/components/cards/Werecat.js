@@ -26,7 +26,8 @@ const Werecat = () => {
       <div className="content">
         <h2>Werecat</h2>
         <p>
-          Werecat is a Online Multiplayer Game build with ReactJs and Socket.io.
+          Werecat is an Online Multiplayer Game built with ReactJs and
+          Socket.io.
           <br />
           Online implementation of One Night Werewolf Board Game.
         </p>

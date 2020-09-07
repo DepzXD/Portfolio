@@ -26,10 +26,10 @@ const RudeWallet = () => {
       <div className="content">
         <h2>Rude Wallet</h2>
         <p>
-          Rude Wallet is a Funny budget managing tool that watch your monthly
+          Rude Wallet is a Funny budget managing tool that watches your monthly
           budget.
-          <br />
-          Simple budget managing app that insult you for over budgeting.
+          <br />A Simple budget managing application that insults you for over
+          budgeting.
         </p>
         <div className="links">
           <a

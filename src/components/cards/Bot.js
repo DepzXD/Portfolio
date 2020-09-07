@@ -29,7 +29,7 @@ const Bot = () => {
         <p>
           Simple moderation discord bot build with Python and Discord.py.
           <br />
-          Rain can help mordrator to avoid spam and also help moderator and
+          Rain can help moderator to avoid spam and also help moderator and
           members can reach with one another.
         </p>
         <div className="links">

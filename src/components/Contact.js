@@ -26,8 +26,8 @@ const Contact = () => (
   >
     <h1>Let's Connect</h1>
     <p>
-      have a project you'd like to discuss or just want to say hi ? <br />
-      feel free to send a message!
+      Have a project you'd like to discuss or just want to say hi ? <br />
+      Feel free to Drop a message!
     </p>
     <ButtonStyle href="mailto:dk721572@gmail.com">Get In Touch</ButtonStyle>
   </ContainerStyle>

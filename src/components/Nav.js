@@ -7,7 +7,7 @@ const Line = styled.div`
   width: 0;
   justify-self: center;
   border-radius: 30px;
-  border: 1.2px solid ${({ theme }) => theme.lightGray};
+  border: 0.2px solid ${({ theme }) => theme.lightGray};
   &.top {
     height: 50rem;
   }
