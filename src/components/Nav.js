@@ -1,4 +1,5 @@
 import React from "react";
+import jump from "jump.js";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 
@@ -35,6 +36,18 @@ const Nav = () => (
         transform: rotate(-90deg);
         font-weight: 400;
       }
+      button {
+        border: none;
+        background: none;
+        font-weight: 400;
+        color: #fff;
+        outline: 0;
+        font-size: inherit;
+        cursor: pointer;
+        &:hover {
+          color: #00ebc7;
+        }
+      }
       div {
         margin: 0;
       }
@@ -56,13 +69,13 @@ const Nav = () => (
       `}
     >
       <h4>
-        <a href="#Contact">Contact</a>
+        <button onClick={() => jump("#Contact")}>Contact</button>
       </h4>
       <h4>
-        <a href="#Projects">Works</a>
+        <button onClick={() => jump("#Projects")}>Works</button>
       </h4>
       <h4>
-        <a href="#About-Me">About</a>
+        <button onClick={() => jump("#About-Me")}>About</button>
       </h4>
     </div>
     <Line />
