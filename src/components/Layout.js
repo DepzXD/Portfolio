@@ -57,20 +57,18 @@ const Layout = ({ children }) => (
             height: 90vh;
           }
         }
-
-          ::-webkit-scrollbar {
-            width: 7px;
-          }
-          ::-webkit-scrollbar-track {
-          background-color: rgba(25,147,147,0.1);
-          }
-          ::-webkit-scrollbar-thumb {
-            border-radius: 3px;
-              background-color: rgba(0,235,199,0.6);
-          }
-          ::-webkit-scrollbar-thumb:hover {
-            background: rgba(0,235,199,1);
-          }
+        ::-webkit-scrollbar {
+          width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+          background-color: rgba(25, 147, 147, 0.1);
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 3px;
+          background-color: rgba(0, 235, 199, 0.6);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgba(0, 235, 199, 1);
         }
       `}
     />
