@@ -65,10 +65,10 @@ const Layout = ({ children }) => (
         }
         ::-webkit-scrollbar-thumb {
           border-radius: 3px;
-          background-color: rgba(0, 235, 199, 0.6);
+          background-color: rgba(0, 235, 199, 0.3);
         }
         ::-webkit-scrollbar-thumb:hover {
-          background: rgba(0, 235, 199, 1);
+          background: rgba(0, 235, 199, 0.7);
         }
       `}
     />
