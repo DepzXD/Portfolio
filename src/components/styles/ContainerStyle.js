@@ -52,4 +52,32 @@ const ContainerStyle = styled.section`
     `}
 `;
 
+export const SocialLinks = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  .links {
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      margin: 0 0.3rem;
+      height: 1rem;
+      &:hover path {
+        fill: ${({ theme }) => theme.secondary};
+      }
+    }
+  }
+`;
+
+export const Line = styled.div`
+  border: 0.2px solid ${({ theme }) => theme.lightGray};
+  width: 15rem;
+  height: 0;
+  border-radius: 20px;
+`;
+
 export default ContainerStyle;
