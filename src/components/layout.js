@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { ThemeProvider } from 'styled-components'
+import Theme from '../styles/Theme'
+import GlobalStyle from '../styles/GlobalStyle'
 import Head from './Head'
 
 const Layout = ({
@@ -8,30 +10,12 @@ const Layout = ({
   description = false,
   image = false,
 }) => {
-  const data = useStaticQuery(graphql`
-    query GetSiteTitle {
-      site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-          image
-        }
-      }
-    }
-  `)
-  const meta = data?.site?.siteMetadata
   return (
-    <>
+    <ThemeProvider theme={Theme}>
       <Head title={title} description={description} image={image} />
-      <header>
-        <Link to="/">{meta.title}</Link>
-        <nav>
-          <Link to="/about">About</Link>
-        </nav>
-      </header>
+      <GlobalStyle />
       <main>{children}</main>
-    </>
+    </ThemeProvider>
   )
 }
 
