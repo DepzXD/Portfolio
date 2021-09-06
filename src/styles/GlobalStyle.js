@@ -40,6 +40,11 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     cursor: pointer;
+    color: ${({ theme }) => theme.white};
+  }
+  a:hover,
+  a:focus {
+    color: ${({ theme }) => theme.aqua};
   }
 
   @media (min-width: 800px) {

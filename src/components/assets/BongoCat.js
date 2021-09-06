@@ -31,7 +31,7 @@ const BongoCat = () => {
         height="364.41"
         viewBox="0 0 825.7 364.41"
       >
-        <g id="keyboard">
+        <g id="keyboardd">
           <path
             fill="#060515"
             d="M620.51 302.63L619.51 314.91 558.02 364.11 227.13 288.66 225.41 272.56"
