@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
+import { Button } from '../../styles/GlobalStyle'
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Container = styled.div`
   width: 100%;
   height: ${({ full }) => full && '90vh'};
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     height: ${({ full }) => full && '100vh'};
     padding-right: 4rem;
   } ;
@@ -18,7 +18,7 @@ const Container = styled.div`
 const Heading = styled.h1`
   line-height: 1.1;
   letter-spacing: -2.5px;
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     line-height: 1;
     font-size: 7.8rem;
   } ;
@@ -27,22 +27,10 @@ const Tag = styled.p`
   line-height: 1;
   font-size: 1.5rem;
   font-weight: 400;
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     font-size: 3rem;
   }
   color: ${({ theme }) => theme.gray};
-`
-const Button = styled(Link)`
-  border: solid 4px ${({ theme }) => theme.aqua};
-  font-size: 1rem;
-  border-radius: 5px;
-  padding: 0.6em 1em;
-  color: ${({ theme }) => theme.aqua};
-  font-weight: 600;
-  margin-top: 2.5em;
-  @media (min-width: 700px) {
-    font-size: 1.3rem;
-  }
 `
 
 const Hero = () => {

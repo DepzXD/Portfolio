@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import Logo from './icons/Logo'
+import Logo from './assets/Logo'
 import { Menu } from 'react-feather'
 import { X } from 'react-feather'
 
@@ -15,7 +15,7 @@ const NavBar = styled.nav`
   position: sticky;
   top: 0;
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     flex-direction: column;
     position: sticky;
     max-width: 4rem;
@@ -25,7 +25,7 @@ const NavBar = styled.nav`
   }
 `
 const NavLogo = styled.div`
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     display: none;
   }
 `
@@ -47,7 +47,7 @@ const NavMenu = styled.ul`
   transition: all 0.5s ease;
   background-color: ${({ theme }) => theme.darkNavy};
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     height: 100%;
     width: auto;
     position: static;
@@ -60,7 +60,7 @@ const NavLink = styled(Link)`
   color: ${({ theme }) => theme.white};
   cursor: pointer;
   font-weight: 600;
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     font-size: 1.2rem;
     transform: rotate(-90deg);
 
@@ -89,14 +89,14 @@ const Hamburger = styled.div`
     width: 54px;
     height: 54px;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     display: none;
   }
 `
 
 const Line = styled.div`
   display: none;
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     display: block;
     border: 1.15px solid ${({ theme }) => theme.gray};
     background-color: ${({ theme }) => theme.gray};

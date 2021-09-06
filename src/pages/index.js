@@ -1,12 +1,16 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import Hero from '../components/Hero'
 import Nav from '../components/Nav'
+import Hero from '../components/sections/Hero'
+import About from '../components/sections/About'
 
 const Container = styled.div`
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     display: flex;
+  }
+  .wrapper {
+    width: 100%;
   }
 `
 
@@ -15,7 +19,10 @@ const IndexPage = () => {
     <Layout>
       <Container>
         <Nav />
-        <Hero />
+        <div className="wrapper">
+          <Hero />
+          <About />
+        </div>
       </Container>
     </Layout>
   )
