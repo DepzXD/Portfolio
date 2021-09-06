@@ -31,7 +31,7 @@ const Content = styled.div`
   padding: 1.5em;
   border-radius: 0 0 17px 17px;
   p {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.gray};
     max-width: 75%;
   }
   h3,

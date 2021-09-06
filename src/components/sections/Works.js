@@ -7,9 +7,15 @@ const WorkSecStyles = styled.section`
   max-width: 85%;
   margin: 0 auto;
   h2 {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
     text-align: center;
     width: 100%;
+  }
+
+  @media (min-width: 800px) {
+    h2 {
+      text-align: left;
+    }
   }
 `
 
