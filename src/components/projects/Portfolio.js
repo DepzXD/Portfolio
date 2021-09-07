@@ -1,11 +1,10 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ExternalLink, GitHub } from 'react-feather'
-import GatsbyIcon from './assets/GatsbyIcon'
-import JavascriptIcon from './assets/JavascriptIcon'
-import CssIcon from './assets/CssIcon'
+import GatsbyIcon from '../assets/GatsbyIcon'
+import JavascriptIcon from '../assets/JavascriptIcon'
+import CssIcon from '../assets/CssIcon'
 
 const ProjectStyle = styled.div`
   @media (min-width: 800px) {
@@ -32,6 +31,7 @@ const ImgContainer = styled.div`
     align-self: flex-start;
     margin-top: 1.7rem;
     overflow: hidden;
+    border-radius: 17px;
     & [data-gatsby-image-wrapper] {
       border-radius: 17px;
       width: 100%;
@@ -65,7 +65,7 @@ const Content = styled.div`
 const ProjectLinks = styled.div`
   display: flex;
 `
-const ProjectLink = styled(Link)`
+const ProjectLink = styled.a`
   margin-right: 1rem;
   font-weight: 600;
   text-align: center;
@@ -93,12 +93,12 @@ const Tools = styled.div`
   }
 `
 
-const Project = () => {
+const Portfolio = () => {
   return (
     <ProjectStyle>
       <ImgContainer>
         <StaticImage
-          src="../images/rude_wallet.jpg"
+          src="../../images/portfolio.jpg"
           alt="Personal portfolio Image."
           aspectRatio={16 / 9}
           placeholder="blurred"
@@ -106,18 +106,21 @@ const Project = () => {
       </ImgContainer>
       <Content>
         <div>
-          <h3>Todo List</h3>
+          <h3>Portfolio</h3>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor
+            Personal Website built with Gatsby, Js, Gsap and Styled Components
+            (Css in Js) for Styling.
           </p>
         </div>
         <div>
           <ProjectLinks>
-            <ProjectLink to="/">
+            <ProjectLink to="https://depz.rocks" target="_blank">
               Link <ExternalLink className="link" />
             </ProjectLink>
-            <ProjectLink to="/">
+            <ProjectLink
+              to="https://github.com/DepzXD/Portfolio"
+              target="_blank"
+            >
               Code <GitHub className="link" />
             </ProjectLink>
           </ProjectLinks>
@@ -132,4 +135,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Portfolio

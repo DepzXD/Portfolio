@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.white};
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   h1,h2,h3,h4,p,a {

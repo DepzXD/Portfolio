@@ -9,11 +9,13 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: ${({ full }) => full && '90vh'};
-
+  .content {
+    max-width: 80%;
+  }
   @media (min-width: 800px) {
     height: ${({ full }) => full && '100vh'};
     padding-right: 4rem;
-  } ;
+  }
 `
 const Heading = styled.h1`
   line-height: 1.1;
@@ -36,7 +38,7 @@ const Tag = styled.p`
 const Hero = () => {
   return (
     <Container full>
-      <div>
+      <div className="content">
         <Tag>Deepak Kumar</Tag>
         <Heading>Designer</Heading>
         <Heading>& Developer</Heading>
