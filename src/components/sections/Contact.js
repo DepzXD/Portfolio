@@ -19,8 +19,7 @@ const Container = styled.div`
   flex-direction: column;
   height: 100%;
   p {
-    max-width: 60%;
-    margin: 0 auto;
+    max-width: 70%;
   }
   a {
     margin-top: 2rem;
