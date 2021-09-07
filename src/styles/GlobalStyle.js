@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import { Link } from 'gatsby'
+
 const GlobalStyle = createGlobalStyle`
   *,
   *:before,
@@ -13,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.white};
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   h1,h2,h3,h4,p,a {
@@ -28,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     
   }
 
@@ -52,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 7.8rem
     }
     h2 {
-      font-size: 4.3rem;
+      font-size: 3.9rem;
     }
     h3 {
       font-size: 2.7rem;

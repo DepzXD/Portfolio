@@ -15,7 +15,7 @@ const AboutSecStyle = styled.section`
     width: 100%;
   }
   @media (min-width: 800px) {
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
     h2 {
       text-align: left;
@@ -31,7 +31,7 @@ const TextBlock = styled.div`
   }
   @media (min-width: 800px) {
     order: -1;
-    flex: 40% 2 2;
+    flex: 50% 2 2;
     margin: 0;
   }
   @media (min-width: 800px) and (max-width: 1000px) {

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 import { ExternalLink, GitHub } from 'react-feather'
 import GatsbyIcon from './assets/GatsbyIcon'
 import JavascriptIcon from './assets/JavascriptIcon'
@@ -9,21 +10,33 @@ import CssIcon from './assets/CssIcon'
 const ProjectStyle = styled.div`
   @media (min-width: 800px) {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
   }
 `
 const ImgContainer = styled.div`
-  background-color: #bcbcbc2e;
-  width: 100%;
-  height: 15rem;
   border-radius: 17px 17px 0 0;
+  background: #131132;
+  & [data-gatsby-image-wrapper] {
+    border-radius: 17px 17px 0 0;
+    cursor: pointer;
+    opacity: 0.45;
+    &:hover {
+      transition: all 0.3s ease;
+      opacity: 1;
+    }
+  }
   @media (min-width: 800px) {
-    grid-column: 5 / -1;
+    grid-column: 7 / -1;
     grid-row: 1 / 1;
     z-index: 5;
-    border-radius: 17px;
     align-self: flex-start;
-    margin-top: 2rem;
+    margin-top: 1.7rem;
+    overflow: hidden;
+    & [data-gatsby-image-wrapper] {
+      border-radius: 17px;
+      width: 100%;
+      height: 100%;
+    }
   }
 `
 const Content = styled.div`
@@ -32,7 +45,7 @@ const Content = styled.div`
   border-radius: 0 0 17px 17px;
   p {
     color: ${({ theme }) => theme.gray};
-    max-width: 75%;
+    max-width: 70%;
   }
   h3,
   p {
@@ -40,7 +53,7 @@ const Content = styled.div`
   }
   @media (min-width: 800px) {
     border-radius: 17px;
-    grid-column: 1 / 6;
+    grid-column: 1 / 8;
     grid-row: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -83,7 +96,14 @@ const Tools = styled.div`
 const Project = () => {
   return (
     <ProjectStyle>
-      <ImgContainer></ImgContainer>
+      <ImgContainer>
+        <StaticImage
+          src="../images/rude_wallet.jpg"
+          alt="Personal portfolio Image."
+          aspectRatio={16 / 9}
+          placeholder="blurred"
+        />
+      </ImgContainer>
       <Content>
         <div>
           <h3>Todo List</h3>

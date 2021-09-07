@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import Project from '../Project'
 
 const WorkSecStyles = styled.section`
-  padding: 1.5em;
-  max-width: 85%;
+  max-width: 80%;
   margin: 0 auto;
   h2 {
     margin-bottom: 3rem;
@@ -13,6 +12,7 @@ const WorkSecStyles = styled.section`
   }
 
   @media (min-width: 800px) {
+    padding: 3em 1.5em;
     h2 {
       text-align: left;
     }
