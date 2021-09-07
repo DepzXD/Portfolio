@@ -5,6 +5,7 @@ import Nav from '../components/Nav'
 import Hero from '../components/sections/Hero'
 import About from '../components/sections/About'
 import Works from '../components/sections/Works'
+import Contact from '../components/sections/Contact'
 
 const Container = styled.div`
   @media (min-width: 800px) {
@@ -24,6 +25,7 @@ const IndexPage = () => {
           <Hero />
           <About />
           <Works />
+          <Contact />
         </div>
       </Container>
     </Layout>
