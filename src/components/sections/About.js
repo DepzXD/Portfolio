@@ -50,7 +50,7 @@ const Container = styled.div`
 
 const About = () => {
   return (
-    <AboutSecStyle>
+    <AboutSecStyle id="About">
       <h2>About me</h2>
       <Container>
         <BongoCat />

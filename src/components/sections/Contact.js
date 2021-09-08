@@ -28,14 +28,14 @@ const Container = styled.div`
 
 const Contact = () => {
   return (
-    <ContactStyle>
+    <ContactStyle id="Contact">
       <Container>
         <h2>Let's Connect</h2>
         <p>
           have a project you'd like to discuss or just want to say hi ? feel
           free to drop a message!
         </p>
-        <Button to="/">Get in Touch</Button>
+        <Button href="mailto:dk721572@gmail.com">Get in Touch</Button>
       </Container>
     </ContactStyle>
   )

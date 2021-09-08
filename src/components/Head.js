@@ -24,8 +24,13 @@ const Head = (props) => {
   return (
     <Helmet>
       <title>{title}</title>
+      <html lang="en" />
       <meta name="description" content={description} />
       <link rel="canonical" href={siteUrl} />
+      <link
+        rel="shortcut icon"
+        href="https://raw.githubusercontent.com/DepzXD/PortfolioOld/master/static/favicon.ico"
+      />
       {image && <meta name="image" content={image} />}
 
       <meta property="og:url" content={siteUrl} />

@@ -43,8 +43,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     color: ${({ theme }) => theme.white};
   }
-  a:hover,
-  a:focus {
+  a:hover{
     color: ${({ theme }) => theme.aqua};
   }
 
@@ -72,6 +71,9 @@ export const Button = styled(Link)`
   color: ${({ theme }) => theme.aqua};
   font-weight: 600;
   margin-top: 2.5em;
+  &:hover {
+    background: rgba(0, 235, 199, 0.1);
+  }
   @media (min-width: 800px) {
     font-size: 1.3rem;
   }

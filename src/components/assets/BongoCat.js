@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { gsap } from 'gsap'
 import styled from 'styled-components'
 
 const CatStyles = styled.div`
@@ -22,6 +23,51 @@ const CatStyles = styled.div`
 `
 
 const BongoCat = () => {
+  React.useEffect(() => {
+    const tl = gsap.timeline({ repeat: -1 }),
+      rightHandDown = '#right-hand-down',
+      rightHandUp = '#right-hand-up',
+      leftHandDown = '#left-hand-down',
+      leftHandUp = '#left-hand-up',
+      duration = 0.075
+    tl.fromTo(
+      rightHandDown,
+      { opacity: 100 },
+      {
+        opacity: 0,
+        duration: duration,
+      },
+      '+=0.015',
+    )
+    tl.fromTo(
+      rightHandUp,
+      { opacity: 0 },
+      {
+        opacity: 100,
+        duration: duration,
+      },
+    )
+    tl.addLabel('right-hand')
+
+    tl.to(
+      leftHandDown,
+      {
+        opacity: 0,
+        duration: duration,
+      },
+      'right-hand+=0.02',
+    )
+
+    tl.fromTo(
+      leftHandUp,
+      { opacity: 0 },
+      {
+        opacity: 100,
+        duration: duration,
+      },
+    )
+  })
+
   return (
     <CatStyles>
       <svg

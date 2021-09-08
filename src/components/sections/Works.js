@@ -31,7 +31,7 @@ const Container = styled.div`
 
 const Works = () => {
   return (
-    <WorkSecStyles>
+    <WorkSecStyles id="Works">
       <h2>Works</h2>
       <Container>
         <Portfolio />

@@ -43,7 +43,7 @@ const Hero = () => {
         <Heading>Designer</Heading>
         <Heading>& Developer</Heading>
       </div>
-      <Button to="/">Contact Me</Button>
+      <Button href="mailto:dk721572@gmail.com">Contact Me</Button>
     </Container>
   )
 }

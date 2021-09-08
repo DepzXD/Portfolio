@@ -25,13 +25,28 @@ const Footer = () => {
   return (
     <FooterStyles>
       <SocialLinks>
-        <a href="https://twitter.com/DepzXD" target="_blank">
+        <a
+          href="https://twitter.com/DepzXD"
+          target="_blank"
+          alt="twitter external link"
+          rel="noreferrer"
+        >
           <Twitter />
         </a>
-        <a href="http://github.com/depzXD" target="_blank">
+        <a
+          href="http://github.com/depzXD"
+          target="_blank"
+          alt="github external link"
+          rel="noreferrer"
+        >
           <GitHub />
         </a>
-        <a href="https://codepen.io/DepzXD/" target="_blank">
+        <a
+          href="https://codepen.io/DepzXD/"
+          target="_blank"
+          alt="codepen external link."
+          rel="noreferrer"
+        >
           <Codepen />
         </a>
       </SocialLinks>

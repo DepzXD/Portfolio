@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { useState } from 'react'
+import { Link as LinkS, animateScroll as scroll } from 'react-scroll'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Logo from './assets/Logo'
-import { Menu } from 'react-feather'
-import { X } from 'react-feather'
+import { Menu, X, Twitter, Codepen, GitHub } from 'react-feather'
 
 const NavBar = styled.nav`
   display: flex;
@@ -14,6 +14,7 @@ const NavBar = styled.nav`
   z-index: 99;
   position: sticky;
   top: 0;
+  background-color: ${({ theme }) => theme.darkNavy};
 
   @media (min-width: 800px) {
     flex-direction: column;
@@ -55,10 +56,8 @@ const NavMenu = styled.ul`
     align-items: center;
   }
 `
-const NavLink = styled(Link)`
+const NavLinkStyles = css`
   font-size: 2rem;
-  color: ${({ theme }) => theme.white};
-  cursor: pointer;
   font-weight: 600;
   @media (min-width: 800px) {
     font-size: 1.2rem;
@@ -76,10 +75,13 @@ const NavLink = styled(Link)`
     /* Opera */
     -o-transform: rotate(-90deg);
   }
-  &:focus,
-  &:hover {
-    color: ${({ theme }) => theme.aqua};
-  }
+`
+
+const NavLinkExternal = styled(Link)`
+  ${NavLinkStyles}
+`
+const NavLink = styled(LinkS)`
+  ${NavLinkStyles}
 `
 
 const Hamburger = styled.div`
@@ -108,11 +110,24 @@ const Line = styled.div`
   }
 `
 
+const SocialLinks = styled.div`
+  a + a {
+    margin-left: 2em;
+  }
+  @media (min-width: 800px) {
+    display: none;
+  }
+`
+
 const Nav = () => {
   const [toggleBtn, setToggleBtn] = useState(false)
+  const scrollToTop = () => {
+    setToggleBtn(false)
+    scroll.scrollToTop()
+  }
   return (
     <NavBar>
-      <NavLogo onClick={() => setToggleBtn(false)}>
+      <NavLogo onClick={() => scrollToTop()}>
         <Logo />
       </NavLogo>
       <Hamburger>
@@ -124,18 +139,69 @@ const Nav = () => {
       </Hamburger>
       <Line />
       <NavMenu toggleBtn={toggleBtn}>
-        <NavLink to="/" onClick={() => setToggleBtn(false)}>
+        <NavLink
+          to="About"
+          onClick={() => setToggleBtn(false)}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           About
         </NavLink>
-        <NavLink to="/" onClick={() => setToggleBtn(false)}>
+        <NavLink
+          to="Works"
+          onClick={() => setToggleBtn(false)}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Works
         </NavLink>
-        <NavLink to="/" onClick={() => setToggleBtn(false)}>
+        <NavLink
+          to="Contact"
+          onClick={() => setToggleBtn(false)}
+          spy={true}
+          smooth={true}
+          offset={80}
+          duration={500}
+        >
           Contact
         </NavLink>
-        <NavLink to="/" onClick={() => setToggleBtn(false)}>
+        <NavLinkExternal
+          to="https://drive.google.com/file/d/1FT2aI70X0oZFoZUDbx5-An9C11xGEvUY/view?usp=sharing"
+          target="_blank"
+          onClick={() => setToggleBtn(false)}
+        >
           Resume
-        </NavLink>
+        </NavLinkExternal>
+        <SocialLinks>
+          <a
+            href="https://twitter.com/DepzXD"
+            target="_blank"
+            alt="twitter external link"
+            rel="noreferrer"
+          >
+            <Twitter />
+          </a>
+          <a
+            href="http://github.com/depzXD"
+            target="_blank"
+            alt="github external link"
+            rel="noreferrer"
+          >
+            <GitHub />
+          </a>
+          <a
+            href="https://codepen.io/DepzXD/"
+            target="_blank"
+            alt="codepen external link."
+            rel="noreferrer"
+          >
+            <Codepen />
+          </a>
+        </SocialLinks>
       </NavMenu>
       <Line small={true} />
     </NavBar>
