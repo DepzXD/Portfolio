@@ -35,7 +35,7 @@ const Contact = () => {
           have a project you'd like to discuss or just want to say hi ? feel
           free to drop a message!
         </p>
-        <Button href="mailto:dk721572@gmail.com">Get in Touch</Button>
+        <Button href="mailto:deepak.k13@outlook.com">Get in Touch</Button>
       </Container>
     </ContactStyle>
   )

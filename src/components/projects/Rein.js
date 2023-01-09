@@ -23,6 +23,7 @@ const ImgContainer = styled.div`
     }
   }
   @media (min-width: 800px) {
+    max-width: 370px;
     grid-column: 7 / -1;
     grid-row: 1 / 1;
     z-index: 5;

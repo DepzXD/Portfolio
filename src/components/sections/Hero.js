@@ -14,7 +14,7 @@ const Container = styled.div`
   }
   @media (min-width: 800px) {
     height: ${({ full }) => full && '100vh'};
-    padding-right: 4rem;
+    // padding-right: 4rem;
   }
 `
 const Heading = styled.h1`
@@ -43,7 +43,7 @@ const Hero = () => {
         <Heading>Designer</Heading>
         <Heading>& Developer</Heading>
       </div>
-      <Button href="mailto:dk721572@gmail.com">Contact Me</Button>
+      <Button href="mailto:deepak.k13@outlook.com">Contact Me</Button>
     </Container>
   )
 }

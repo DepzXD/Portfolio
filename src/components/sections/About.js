@@ -56,19 +56,20 @@ const About = () => {
         <BongoCat />
         <TextBlock>
           <p>
-            Hi, I'm Deepak Kumar, a passionate self-taught Full stack developer
-            from India also known as Depz on the web.
+            Hi, I'm Deepak Kumar, a self-taught and passionate web developer
+            from India.
           </p>
           <p>
-            I'm currently a third year student at DAV College pursuing my degree
-            in Bachelor of Computer Application. I have experience in designing
-            and developing software for the web, from simple websites to full
-            stack Applications.
+            I am currently pursuing my Masters degree in Computer
+            Applications(MCA) from VIT University. I have experience in
+            designing and developing software for the web, from simple websites
+            to full stack Applications.
           </p>
           <p>
-            I always try to learn new and better ways to create applications
-            with scalable code. I also like attending Hackathons and
-            Conferences.
+            Outside of my studies, I am actively involved in the tech community
+            and enjoy participating in hackathons and attending tech
+            conferences. I am always looking for ways to improve my skills and
+            knowledge in the field of software.
           </p>
         </TextBlock>
       </Container>

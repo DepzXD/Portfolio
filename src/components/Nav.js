@@ -170,7 +170,7 @@ const Nav = () => {
           Contact
         </NavLink>
         <NavLinkExternal
-          to="https://drive.google.com/file/d/1FT2aI70X0oZFoZUDbx5-An9C11xGEvUY/view?usp=sharing"
+          to="https://drive.google.com/file/d/1u_wI-uehrAA6vrmqm9oLZtaWR5LssV0H/view?usp=sharing"
           target="_blank"
           onClick={() => setToggleBtn(false)}
         >
